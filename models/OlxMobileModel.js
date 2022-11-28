@@ -1,10 +1,8 @@
 const mongoose =  require('mongoose')
 
-const olxSchema = new mongoose.Schema({
+const mobileSchema = new mongoose.Schema({
   id : {type : String},
    brand :  {type : String},
-  year :  {type : String},
-  driven :  {type : String},
   title : {type : String},
   description :  {type : String},
   price :  {type : String},
@@ -17,9 +15,7 @@ const olxSchema = new mongoose.Schema({
 })
 
 
+const OlxMobileModel = mongoose.model("olx-mobile", mobileSchema)
 
 
-const OlxBikeModel = mongoose.model("olx-bikes", olxSchema)
-
-
-module.exports = {OlxBikeModel}
+module.exports = {OlxMobileModel}

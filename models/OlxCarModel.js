@@ -1,6 +1,6 @@
 const mongoose =  require('mongoose')
 
-const olxSchema = new mongoose.Schema({
+const carSchema = new mongoose.Schema({
   id : {type : String},
    brand :  {type : String},
   year :  {type : String},
@@ -19,7 +19,7 @@ const olxSchema = new mongoose.Schema({
 
 
 
-const OlxBikeModel = mongoose.model("olx-bikes", olxSchema)
+const OlxCarModel = mongoose.model("olx-car", carSchema)
 
 
-module.exports = {OlxBikeModel}
+module.exports = {OlxCarModel}
