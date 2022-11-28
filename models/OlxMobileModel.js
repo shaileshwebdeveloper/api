@@ -15,7 +15,7 @@ const mobileSchema = new mongoose.Schema({
 })
 
 
-const OlxMobileModel = mongoose.model("olx-mobile", mobileSchema)
+const OlxMobileModel = mongoose.model("olxmobiles", mobileSchema)
 
 
 module.exports = {OlxMobileModel}

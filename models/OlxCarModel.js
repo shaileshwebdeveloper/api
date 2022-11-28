@@ -19,7 +19,7 @@ const carSchema = new mongoose.Schema({
 
 
 
-const OlxCarModel = mongoose.model("olx-car", carSchema)
+const OlxCarModel = mongoose.model("olxcars", carSchema)
 
 
 module.exports = {OlxCarModel}

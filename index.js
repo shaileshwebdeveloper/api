@@ -35,10 +35,11 @@ const PORT  = process.env.PORT || 3001
     })
 
 
-    app.get("/olx-mobile", async (req,res)=>{
+    app.get("/olx-mobiles", async (req,res)=>{
+
         const mobile = await OlxMobileModel.find()
         console.log(mobile)
-        res.send("HELLO")
+        res.send(mobile)
         
     })
 
